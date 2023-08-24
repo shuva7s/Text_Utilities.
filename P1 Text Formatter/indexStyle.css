@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(235, 239, 243);
+    padding: 1.5rem 0;
+    min-height: calc(100vh - 3rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1600px;
+    margin-inline: auto;
+
+}
+
+#TA {
+    min-width: 78%;
+    height: 37vmin;
+    display: block;
+    margin-inline: auto;
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.17s ease;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 5px 1rem 0 rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    font-size: 17px;
+    max-width: 78%;
+    text-transform: none;
+}
+
+#TA:focus {
+    outline: none;
+    transform: scaleX(1.02);
+    box-shadow: 2px 5px 2rem 0 rgba(0, 0, 0, 0.1);
+    border-top: 4px solid rgb(0, 115, 255);
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0.3rem;
+    background-color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    box-shadow: 1px 2px 0.6rem 0 rgba(0, 0, 0, 0.035);
+    transition: all 0.17s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    box-shadow:1px 2px 0.6rem 0 rgba(0, 0, 0, 0.05), 0 0 0.7rem 0.3rem rgba(255, 255, 255, 0.7);
+}
+
+.buttons,
+.custom {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.custom {
+    margin-top: 0;
+}
+
+.buttons button:nth-child(4) {
+    padding: 0.8rem;
+    color: rgb(75, 75, 75);
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#cpy {
+    position: relative;
+}
+
+#copied {
+    position: absolute;
+    display: block;
+    bottom: -50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}

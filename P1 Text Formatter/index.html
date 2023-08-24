@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="textSpace" id="TA" cols="120" rows="16" placeholder="Enter text"></textarea>
+
+    <div class="buttons">
+        <button id="Uppercase">UPPERCASE</button>
+        <button id="Lowercase">lowercase</button>
+        <button id="Capitalize">Capitalize</button>
+        <button id="reset"><i class="fa-solid fa-arrow-rotate-left fa-xl"></i></button>
+    </div>
+    <div class="custom">
+        <button id="remSp">Remove Extra Spaces</button>
+        <button id="cpy">
+            Copy 
+            <i class="fa-regular fa-clipboard fa-xl"></i>
+            <span id="copied">Copied!</span>
+        </button>
+    </div>
+    <h4>Words: <span id="WordCount">0</span></h4>
+    <h4>Spaces <span id="spaces">0</span></h4>
+    <h4>Vowels: <span id="Vowels">0</span></h4>
+    <h4>Consonants: <span id="Consonants">0</span></h4>
+    <h4>Total Characters: <span id="TotalChar">0</span></h4>
+    <h4>Special Characters: <span id="spch">0</span></h4>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
